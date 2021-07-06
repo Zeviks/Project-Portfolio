@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+:root {
+    /*? Colors */
+    --color-primary: #2b2d42;
+    --color-secondary: #8d99ae;
+    --color-background: #edf2f4;
+    --color-light-accent: #ef233c;
+    --color-accent: #d90429;
+    /*? Fonts  */
+    --font-primary: 'Comfortaa';
+}
+
+html {
+    font-size: 62.5%;
+    background: var(--color-background);
+}
+
+body {
+    font-family: var(--font-primary), sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: color 200ms ease;
+}
+a:hover {
+    color: var(--color-secondary);
+    transition: color 200ms ease;
+}
+ 
+ul {
+    list-style: none;
+}
+
+/* Navigation Bar */
+.nav-block {
+    margin: 2rem 5rem;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.n-list-item {
+    display: inline;
+    margin-left: 6rem;
+    font-weight: 700;
+}
+
+.l-list-item {
+    display: inline;
+    margin-right: 1.3rem;
+    font-size: 1.5rem;
+}
+.nav-icon {
+    font-size: 1.8rem;
+    border: rgba(141, 153, 174, .1) solid 1px;
+    padding: 1rem;
+    transition: all 200ms ease;
+}
+.nav-icon:hover {
+    background: var(--color-secondary);
+    color: var(--color-background);
+    transition: all 200ms ease;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+}
+
+.nav-email:hover {
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: color 200ms ease;
+}
