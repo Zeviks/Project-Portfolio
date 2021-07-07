@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     /*? Colors */
@@ -6,9 +7,12 @@
     --color-secondary: #8d99ae;
     --color-background: #edf2f4;
     --color-light-accent: #ef233c;
-    --color-accent: #d90429;
+    --color-accent: #E8DAFF;
+    /*? Gradients */
+    --gradient-accent: background: radial-gradient(circle, rgba(232,218,255,1) 68%, rgba(148,213,233,1) 100%);
     /*? Fonts  */
     --font-primary: 'Comfortaa';
+    --font-secondary: 'Raleway';
 }
 
 html {
@@ -17,23 +21,30 @@ html {
 }
 
 body {
-    font-family: var(--font-primary), sans-serif;
+    font-family: var(--font-secondary), sans-serif;
 }
 
 a {
+    outline: 0;
     text-decoration: none;
     color: var(--color-primary);
     transition: color 200ms ease;
 }
 a:hover {
-    color: var(--color-secondary);
+    color: var(--color-accent);
     transition: color 200ms ease;
 }
  
 ul {
     list-style: none;
 }
-
+ p {
+     margin: 0;
+ }
+ /* Blocks */
+ .block {
+     margin: 0 4rem;
+ }
 /* Navigation Bar */
 .nav-block {
     margin: 2rem 5rem;
@@ -75,4 +86,103 @@ ul {
     color: var(--color-secondary);
     cursor: pointer;
     transition: color 200ms ease;
+}
+
+/* ! Hero */
+.hero {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.hero-emoji {
+    margin-top: 2rem;
+    background-image: url(../images/blob.svg);
+    background-repeat: no-repeat;
+    width: 25rem;
+    height: 25rem;
+    grid: 1 / 1 / 2 / 3;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-msg {
+    font-size: 10rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    width: 18ch;
+}
+.hero-name {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.hero-description {
+    line-height: 1.5;
+    width: 44ch;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+}
+
+.hero-btn {
+font-size: 1.5rem;
+ margin: 4rem 0 ;
+ background: black;
+ color: var(--color-background);
+ padding: 2rem 6rem;
+ border-radius: 35px;
+ transition: all 200ms ease;
+ cursor: pointer;
+}
+
+.hero-btn:hover {
+    background: var(--color-background);
+    color: black;
+    transition: all 200ms ease;
+}
+
+.hero-p-design {
+    border-bottom: rgba(232, 218, 255, 0.8) solid 1.3rem;
+
+}
+
+/* ! Projects */
+
+.project-section {
+    padding: 2rem;
+    border: red solid 3px;
+    row-gap: 3rem;
+    column-gap: -2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.project-card {
+    background: var(--color-accent);
+    width: 50rem;
+    height: 50rem;
+    transition: all 200ms ease;
+}
+
+.project-card:hover {
+    transition: all 200ms ease;
+    background: black;
+    transform: translate(-10px, -10px);
+    box-shadow: 5px 5px 15px 8px rgba(232, 218, 255, .6);
+    
+}
+
+.project-card-l {
+
 }
