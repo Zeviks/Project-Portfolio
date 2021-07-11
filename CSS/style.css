@@ -85,6 +85,9 @@ ul {
      font-weight: 700;
  }
 
+ .section-title .mid {
+     justify-content: center;
+ }
 /*! Navigation Bar */
 .nav-block {
     margin: 2rem 5rem;
@@ -344,3 +347,28 @@ background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 
     grid-area: 4 / 2 / 6 / 3;
     align-self: end;
 }
+
+/*! Social */
+.socials-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    margin-right: 5rem;
+}
+.icon {
+    font-size: 5rem;
+}
+
+.linkedin:hover {
+    color: #0a66c2;
+}
+
+.github:hover {
+}
+
+.facebook:hover {}
+
+.instagram:hover {}
