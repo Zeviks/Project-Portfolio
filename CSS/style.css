@@ -360,15 +360,18 @@ background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 
 }
 .icon {
     font-size: 5rem;
+    color: var(--color-primary);
+    transition: all 200ms ease;
 }
 
-.linkedin:hover {
-    color: #0a66c2;
+.icon:hover {
+    color: #2b2d42c0;
+    transition: all 200ms ease;
 }
 
-.github:hover {
+.socials-nav {
+background: rgb(232,218,255);
+background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 100%);
+padding: 2rem;
 }
 
-.facebook:hover {}
-
-.instagram:hover {}
