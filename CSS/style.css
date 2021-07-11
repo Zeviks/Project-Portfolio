@@ -370,8 +370,16 @@ background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 
 }
 
 .socials-nav {
-background: rgb(232,218,255);
-background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 100%);
+
 padding: 2rem;
 }
 
+/* !footer */
+.footer-border {
+    border-top: var(--color-primary) solid 1px;
+    margin-bottom: 3rem;
+}
+
+.footer-icon {
+    font-size: 2rem;
+}
