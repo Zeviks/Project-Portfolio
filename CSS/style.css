@@ -253,11 +253,11 @@ justify-content: center;
     font-weight: 600;
     margin-bottom: .8rem;
 }
-
 .t-skills {
     border-spacing:  0 2.1rem;
 }
 .t-skills-detail {
+    padding-bottom: 1rem;
     padding-right: 8rem;
 }
 
@@ -293,4 +293,54 @@ justify-content: center;
 
 strong {
     font-weight: 700;
+}
+/* ! Learning or About-me */
+.learn-sec-container {
+    background: rgb(232,218,255);
+background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 5rem;
+    display: grid;
+    grid-gap: 2.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(2, 60rem);
+    grid-template-rows: 10vh 1fr 10vh 1fr 10vh;
+}
+.learn-container {
+}
+
+.learn-card-img {
+    height: 50vh;
+    background: url(https://source.unsplash.com/random);
+}
+
+.learning-sec-title {
+    width: 19ch;
+}
+
+.learn-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.learn-description {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.card-1 {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.card-2 {
+    grid-area: 2 / 2 / 4 / 3;
+}
+
+.card-3 {
+    grid-area: 3 / 1 / 5 / 2;
+}
+
+.card-4 {
+    grid-area: 4 / 2 / 6 / 3;
+    align-self: end;
 }
