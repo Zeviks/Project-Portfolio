@@ -63,6 +63,9 @@ ul {
  p {
      margin: 0;
  }
+ section {
+     margin: 10rem;
+ }
  /* Blocks */
  .block {
      margin: 0 2rem;
@@ -79,15 +82,13 @@ ul {
  .section-title {
      display: flex;
      align-items: center;
-     justify-content: flex-start;
+     justify-content: center;
      margin: 2rem 0;
      font-size: 2.5rem;
      font-weight: 700;
+     text-transform: capitalize;
  }
 
- .section-title .mid {
-     justify-content: center;
- }
 /*! Navigation Bar */
 .nav-block {
     margin: 2rem 5rem;
@@ -299,6 +300,7 @@ strong {
 }
 /* ! Learning or About-me */
 .learn-sec-container {
+    margin-bottom: 15rem;
     background: rgb(232,218,255);
 background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 100%);
     padding: 5rem;
@@ -360,7 +362,7 @@ background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 
 }
 .icon {
     font-size: 5rem;
-    color: var(--color-primary);
+    color: black;
     transition: all 200ms ease;
 }
 
@@ -370,7 +372,6 @@ background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 
 }
 
 .socials-nav {
-
 padding: 2rem;
 }
 
