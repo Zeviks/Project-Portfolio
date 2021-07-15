@@ -28,39 +28,40 @@
   <link rel="stylesheet" href="CSS/style.css" />
   <body>
     <!-- ! Navigation Bar  -->
-<div class="nav-block">
-  <nav class="nav-block nav-bar">
-    <ul class="list logo-list">
-        <li class="l-list-item"><i class="nav-icon fas fa-envelope-open-text"></i></li>
-        <li class="l-list-item nav-email"><a class="email-link">natepacheco716@gmail.com</a></li>
-    </ul>
-      <ul class="list nav-list">
-      <li class="n-list-item"><a href="" class="nav-link">Projects</a></li>
-      <li class="n-list-item"><a href="" class="nav-link">Resume</a></li>
-      <li class="n-list-item"><a href="" class="nav-link">Services</a></li>
-      <li class="n-list-item"><a href="" class="nav-link">Contact</a></li>
-    </ul>
-</div>
-<!-- !Hero -->
-<div class="hero-block hero">
-  <div class="hero-emoji-container">
-    <img class="hero-emoji emoji" src="images/Emoji-Hero.PNG" alt="" />
-  </div>
+<section class="nav-block">
+    <nav class="nav-block nav-bar">
+      <ul class="list logo-list">
+          <li class="l-list-item"><i class="nav-icon fas fa-envelope-open-text"></i></li>
+          <li class="l-list-item nav-email"><a class="email-link">natepacheco716@gmail.com</a></li>
+      </ul>
+        <ul class="list nav-list">
+        <li class="n-list-item"><a href="" class="nav-link">Projects</a></li>
+        <li class="n-list-item"><a href="" class="nav-link">Resume</a></li>
+        <li class="n-list-item"><a href="" class="nav-link">Services</a></li>
+        <li class="n-list-item"><a href="" class="nav-link">Contact</a></li>
+      </ul>
+</section>
 
-  <div class="hero-content">
-    <h1 class="hero-name">Hi, I'm Natanael ✌🏼</h1>
-    <h2 class="hero-msg">
-      <span class="border-design">Building</span> digital products, designer,
-      developer.
-    </h2>
-    <p class="hero-description">
-      a self-taught <strong>Front End Developer</strong> based in Edinburg, TX.
-      I specialize in turning <strong>mockups</strong> and
-      <strong>wireframes</strong> into fully <strong>responsive</strong> sites.
-    </p>
-    <button class="hero-btn">Connect With Me</button>
-  </div>
-</div>
+<!-- !Hero -->
+<section class="hero-block hero">
+    <div class="hero-emoji-container">
+      <img class="hero-emoji emoji" src="images/Emoji-Hero.PNG" alt="" />
+    </div>
+  
+    <div class="hero-content">
+      <h1 class="hero-name">Hi, I'm Natanael ✌🏼</h1>
+      <h2 class="hero-msg">
+        <span class="border-design">Building</span> digital products, designer,
+        developer.
+      </h2>
+      <p class="hero-description">
+        a self-taught <strong>Front End Developer</strong> based in Edinburg, TX.
+        I specialize in turning <strong>mockups</strong> and
+        <strong>wireframes</strong> into fully <strong>responsive</strong> sites.
+      </p>
+      <button class="hero-btn">Connect With Me</button>
+    </div>
+</section>
 <!-- !Projects -->
 <section class="project-section">
   <header class="section-title">
@@ -77,31 +78,16 @@
 </section>
 <!-- !Socials -->
 <section class="socials block2">
-  <h2 class="section-title mid border-design">Socials</h2>
-  <div class="socials-container">
-    <nav class="socials-nav">
-      <ul class="list">
-        <li class="n-list-item">
-          <a href="#" class="social-link linkedin"
-            ><i class="icon fab fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li class="n-list-item">
-          <a href="#" class="social-link"><i class="icon fab fa-github"></i></a>
-        </li>
-        <li class="n-list-item">
-          <a href="#" class="social-link"
-            ><i class="icon fab fa-facebook-f"></i
-          ></a>
-        </li>
-        <li class="n-list-item">
-          <a href="#" class="social-link"
-            ><i class="icon fab fa-instagram"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <header class="section-title">
+    <h2 class="section-title border-design">Socials</h2>
+  </header>
+  <div class="about-me-container">
+    <img class="about-me-img" src="https://source.unsplash.com/random" alt="">
+    <div class="about-me-content">
+      <h2 class="about-me-title">A Bit More About Me</h2>
+      <p class="about-me-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda facilis nemo animi cum dolores, nisi veritatis perspiciatis pariatur enim omnis voluptatem error doloribus dolor nam, repellendus tempore? At, facere. Consectetur a deserunt nam accusantium molestiae accusamus provident magni rem doloremque quidem tenetur quam, sed nostrum debitis doloribus modi eaque minus mollitia blanditiis voluptas quis sapiente cumque possimus? Voluptate numquam quia illum animi totam aliquam, tempore vel placeat aperiam, laudantium pariatur tenetur quidem quis nam vero minus! Veritatis, ipsum! Doloremque labore iure non commodi ab quae sint dolor aliquam. Explicabo quaerat atque voluptatem molestias earum praesentium magnam nostrum libero illo.</p>
+    </div>
+  </div>  
 </section>
 <!-- !Resume -->
 <section class="resume-section">
@@ -204,9 +190,11 @@
       </section>
       <!-- !What I am currently learning / About me -->
 <section class="block2 learning">
-  <h2 class="learning-sec-title section-title border-design">
-    What i am currently learning or interested in.
-  </h2>
+  <header class="section-title">
+    <h2 class="learning-sec-title section-title border-design">
+      What i am currently learning or interested in.
+    </h2>
+  </header>
   <div class="learn-sec-container">
     <!-- card 1 -->
     <div class="card-1 learn-container">
@@ -229,7 +217,7 @@
         <div class="learn-card-img">
           <img class="learn-card-im" src="" alt="" />
         </div>
-        <h3 class="learn-title">Machine learning & AI</h3>
+        <h3 class="learn-title">Machine Learning & AI</h3>
         <p class="learn-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
           provident quas ullam illum rerum in laboriosam, velit vel, consequatur
@@ -244,7 +232,7 @@
         <div class="learn-card-img">
           <img class="learn-card-im" src="" alt="" />
         </div>
-        <h3 class="learn-title">Mobile development with React Native</h3>
+        <h3 class="learn-title">Mobile Development with React Native</h3>
         <p class="learn-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
           provident quas ullam illum rerum in laboriosam, velit vel, consequatur
@@ -270,10 +258,14 @@
     </div>
   </div>
 </section>
+    <!-- ! Feedback  -->
+    <section class="feedback">
+      <img src="Images" alt="">
+    </section>
 
     <!-- !Footer -->
     <footer class="footer-border block">
-      <nav class="nav-block nav-bar">
+      <nav class="nav-block nav-bar footer-nav">
         <ul class="list">
           <li class="n-list-item">
             <a href="#" class=""
