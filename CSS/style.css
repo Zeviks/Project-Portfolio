@@ -64,15 +64,15 @@ ul {
      margin: 0;
  }
  section {
-     margin: 15rem;
+     margin: 20rem 0;
  }
  /* Blocks */
  .block {
-     margin: 0 2rem;
+     margin: 0 10rem;
  }
 
  .block2 {
-     margin: 0 12rem;
+     margin: 0 28rem;
  }
 
  .thicker-block {
@@ -80,9 +80,7 @@ ul {
  } 
  /* Section Titles */
  .section-title {
-     display: flex;
-     align-items: center;
-     justify-content: center;
+     
      margin-bottom: 10rem;
      font-size: 4.5rem;
      font-weight: 700;
@@ -178,6 +176,7 @@ justify-content: center;
 
 .hero-btn {
     font-size: 1.5rem;
+    border: 0;
     margin: 4rem 0 ;
     background: black;
     color: var(--color-background);
@@ -188,12 +187,14 @@ justify-content: center;
 }
 
 .hero-btn:hover {
+    border: black solid 1px;
     background: transparent;
     color: black;
     transition: all 200ms ease;
 }
 
 .border-design {
+    width: fit-content;
     border-bottom: rgba(232, 218, 255, 0.8) solid 1.3rem;
 }
 
@@ -226,14 +227,14 @@ justify-content: center;
 /*! Resume */
 .resume-container {
     display: grid;
-    gap: 5rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 50rem);
+    background-position: fixed;
     background-image: url(../images/blob.svg);
     background-repeat: no-repeat;
-    background-size: 43% 100%;
-    background-position-x: 105rem;
-    background-position-y: 20rem;
+    background-size: 43% 70%;
+    background-position-x: 103rem;
+    background-position-y: 38rem;
 }
 
 .resume-inner-section-title {
@@ -286,24 +287,26 @@ justify-content: center;
 .questions-link:hover {
     color: #494b5e;
 }
-.questions-content {
-    margin-top: 10rem;
-}
 
 .resume-emoji {
-    width: 25%;
-    height: 50%;
+    width: 220px;
+    height: 220px;
 }
 
+.got-questions {
+    align-self: center;
+}
 strong {
     font-weight: 700;
 }
 
 /* ! Learning or About-me */
+.learning {
+    margin-bottom: 12rem;
+}
 .learn-sec-container {
-    margin-bottom: 15rem;
     background: rgb(232,218,255);
-background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 100%);
     padding: 5rem;
     display: grid;
     grid-gap: 2.5rem;
@@ -379,9 +382,17 @@ padding: 2rem;
 }
 
 /* !footer */
+.footer-nav {
+    margin: 0;
+    padding: 1rem;
+    align-content: center;
+}
+.footer-sec {
+    background: rgb(232,218,255);
+    background: radial-gradient(circle, rgba(232,218,255,1) 80%, rgba(255,255,255,1) 100%);
+}
 .footer-border {
     border-top: rgba(43, 45, 66, .2) solid 1px;
-    margin-bottom: 3rem;
 }
 
 .footer-icon {
@@ -428,7 +439,6 @@ padding: 2rem;
 }
 
 .about-me-icons {
-    border: red solid 2px;
     height: 10vh;
 }
 
@@ -437,20 +447,19 @@ padding: 2rem;
     display: flex;
     justify-content: space-between;
     height: 50vh;
-    margin-top: 35rem;
+    margin: 0;
 }
 
 .blob {
     display: inline-block;
     position: relative;
 }
-.feedback-blob1 {
+.feedback-blob1, .feedback-blob2 {
+    z-index: -1;
     opacity: .8;
-    bottom: 25rem;
 }
-.feedback-blob2 {
-    opacity: .8;
-    top: 15rem;
+.feedback-blob1 {
+    bottom: 25rem;
 }
 .feedback-content {
     display: flex;
