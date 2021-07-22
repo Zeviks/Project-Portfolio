@@ -224,6 +224,16 @@ justify-content: center;
     box-shadow: 5px 5px 15px 8px rgba(232, 218, 255, 1);
 }
 
+.project-page-link {
+    grid-area: 3 / -2 / 4 / -1;
+    font-size: 2rem;
+    justify-self: end;
+    margin-right: 3rem;
+}
+.link-arrow:hover {
+    transform: translateX(5rem);
+}
+
 /*! Resume */
 .resume-container {
     display: grid;
