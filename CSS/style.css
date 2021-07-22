@@ -7,6 +7,7 @@
     --color-background: #edf2f4;
     --color-darker-accent: rgba(214, 192, 248, 0.705);
     --color-accent: #E8DAFF;
+    --color-link: #42445f;
     /*? Gradients */
     --gradient-accent: background: radial-gradient(circle, rgba(232,218,255,1) 68%, rgba(148,213,233,1) 100%);
     /*? Fonts  */
@@ -53,7 +54,7 @@ a {
     transition: color 200ms ease;
 }
 a:hover {
-    color: var(--color-darker-accent);
+    color: var(--color-link);
     transition: color 200ms ease;
 }
  
@@ -132,6 +133,7 @@ ul {
 }
 /* ! Hero */
 .hero {
+margin-top: 0;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -227,17 +229,32 @@ justify-content: center;
 .project-page-link {
     grid-area: 3 / -2 / 4 / -1;
     font-size: 2rem;
+    font-weight: 500;
     justify-self: end;
     margin-right: 3rem;
 }
-.link-arrow:hover {
-    transform: translateX(5rem);
+.project-page-link::after {
+    content: url(../images/arrow-right-solid.svg);
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    position: relative;
+    top: .5rem;
+    left: 1rem;
+    transform: translateX(0);
+    transition: transform 200ms ease-in;
+}
+
+.project-page-link:hover::after {
+    transform: translateX(1rem);
+    transition: all 200ms ease-in;
 }
 
 /*! Resume */
 .resume-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(2, 100rem);
     grid-template-rows: repeat(2, 50rem);
     background-position: fixed;
     background-image: url(../images/blob.svg);
@@ -309,7 +326,10 @@ justify-content: center;
 strong {
     font-weight: 700;
 }
-
+.skills, 
+.got-questions {
+    justify-self: end;
+}
 /* ! Learning or About-me */
 .learning {
     margin-bottom: 12rem;
