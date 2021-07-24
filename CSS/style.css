@@ -339,7 +339,7 @@ strong {
     background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 100%);
     padding: 5rem;
     display: grid;
-    grid-gap: 2.5rem;
+    grid-gap: 5rem;
     justify-content: center;
     grid-template-columns: repeat(2, 60rem);
     grid-template-rows: 10vh 1fr 10vh 1fr 10vh;
@@ -386,6 +386,7 @@ strong {
 /*! Social */
 .socials {
     padding-bottom: 15rem;
+    
 }
 .socials-container {
     display: flex;
@@ -438,7 +439,7 @@ padding: 2rem;
 .about-me-img {
     width: 40%;
     height: 55vh;
-    margin-right: 4rem;
+    margin-right: 12rem;
     box-shadow: 10px 12px 25px 2px rgba(232, 218, 255, .3);
 }
 
