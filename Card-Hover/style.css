@@ -9,7 +9,7 @@
 }
 
 .card {
-    
+
     color: #fff;
     display: flex;
     align-items: flex-end;
@@ -22,7 +22,6 @@
     overflow: hidden;
     transition: transform 500ms ease;
 }
-
 .card:hover {
     transform: scale(1.05);
     filter: grayscale(0%);
@@ -90,7 +89,7 @@
 .card-title::after {
     content: "";
     position: absolute;
-    height: 2px;
+    height: 4px;
     left: calc(var(--padding) * -1 );
     bottom: 0;
     width: calc(100% + var(--padding));
