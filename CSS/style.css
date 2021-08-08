@@ -70,6 +70,11 @@ ul {
  section {
      margin: 20rem 0;
  }
+ @media screen and (max-width: 375px) {
+     section {
+         margin: 5rem 0;
+     }
+ }
  @media screen and (max-width: 1024px) {
     section {
         margin: 12rem 0;
@@ -89,7 +94,7 @@ ul {
     } 
  }
  .thicker-block {
-    margin: 9 8rem;
+    margin: 0 8rem;
  } 
  /* Section Titles */
  .section-title {
@@ -98,6 +103,14 @@ ul {
      font-size: 4.5rem;
      font-weight: 700;
      text-transform: capitalize;
+ }
+ @media screen and (max-width: 375px) {
+     .section-title {
+         font-size: 3rem;
+         width: 100%;
+         text-align: center;
+         margin-bottom: 4rem;
+     }
  }
 
  @media screen and (max-width: 1024px) {
@@ -268,6 +281,22 @@ justify-content: center;
         font-size: 2rem;
     }
 }
+@media screen and (max-width: 375px) {
+    .hero-emoji {
+        width: 20rem;
+        height: 20rem;
+    }
+    .hero-name {
+        font-size: 2.5rem;
+    }
+    .hero-msg {
+        font-size: 3.8rem;
+    }
+    .hero-description {
+        font-size: 1.8rem;
+        width: 32ch;
+    }
+}
 
 
 /* ! Projects */
@@ -346,6 +375,14 @@ justify-content: center;
     .card {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 375px) {
+    .project-container {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 /*! Resume */
@@ -450,9 +487,6 @@ strong {
     background: url(https://source.unsplash.com/random);
 }
 
-.learning-sec-title {
-    width: 19ch;
-}
 
 .learn-title {
     font-size: 2.5rem;
@@ -562,16 +596,23 @@ strong {
     .l-card-3,
     .l-card-4 {
         grid-area: auto;
+        justify-self: auto;
     }
+
     .learn-card {
         margin-top: 2rem;
     }
 }
+@media screen and (max-width: 375px) {
+    .learn-title {
+        width: 18ch;
+    }
+    .l-card-4 {
+        display: none;
+    }
+}
 
 /*! Social */
-.socials {
-    padding-bottom: 15rem; 
-}
 .socials-container {
     display: flex;
     justify-content: center;
@@ -679,7 +720,16 @@ padding: 2rem;
         width: 40ch;
     }
 }
+@media screen and (max-width: 375px) {
+    .about-me-img {
+        display: none;
+    }
+    .about-me-title {
+        font-size: 3.3rem;
+        margin-bottom: 2rem;
+    }
 
+}
 /* !Feedback */
 .feedback {
     display: flex;
