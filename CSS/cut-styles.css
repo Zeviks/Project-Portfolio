@@ -1,0 +1,117 @@
+/*! Resume */
+.resume-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 83.5rem);
+    grid-template-rows: repeat(2, 50rem);
+    background-position: fixed;
+    background-image: url(../images/blob.svg);
+    background-repeat: no-repeat;
+    background-size: 43% 70%;
+    background-position-x: 103rem;
+    background-position-y: 38rem;
+}
+
+.resume-inner-section-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.detail-section {
+    margin-bottom: 3rem;
+}
+.detail-title {
+    text-align: start;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: .8rem;
+    padding-right: 3rem;
+}
+
+.inner-detail-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: .8rem;
+}
+.t-skills {
+    border-spacing:  0 2.1rem;
+}
+.t-skills-detail {
+    padding-bottom: 1rem;
+    padding-right: 8rem;
+}
+
+.t-skills-detail, .light-detail {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.got-questions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.questions-title {
+    font-size: 5rem;
+    font-weight: 600;
+}
+.questions-link {
+    text-decoration: underline;
+    font-size: 5rem;
+}
+.questions-link:hover {
+    color: #494b5e;
+}
+
+.resume-emoji {
+    width: 220px;
+    height: 220px;
+}
+
+.got-questions {
+    align-self: center;
+}
+strong {
+    font-weight: 700;
+}
+
+
+/* !Feedback */
+.feedback {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    margin: 0;
+}
+
+.blob {
+    display: inline-block;
+    position: relative;
+}
+.feedback-blob1, .feedback-blob2 {
+    z-index: -1;
+    opacity: .8;
+}
+.feedback-blob1 {
+    bottom: 25rem;
+}
+.feedback-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feedback-msg {
+    font-size: 5rem;
+    width: 30ch;
+    font-weight: 600;
+}
+.feedback-link {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
