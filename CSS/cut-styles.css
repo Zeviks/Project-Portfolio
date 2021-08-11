@@ -154,3 +154,148 @@ padding: 2rem;
     transform: translate(-10px, -10px);
     box-shadow: 5px 5px 15px 8px rgba(232, 218, 255, 1);
 }
+
+
+/* ! Learning or About-me */
+.learning {
+    margin-bottom: 12rem;
+}
+.learn-sec-container {
+    background: rgb(232,218,255);
+    background: radial-gradient(circle, rgba(232,218,255,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 5rem;
+    display: grid;
+    grid-gap: 15rem;
+    justify-content: center;
+    grid-template-columns: repeat(2, 60rem);
+    grid-template-rows: 10vh 1fr 10vh 1fr 10vh;
+}
+.learn-container {
+    width: min-content;
+}
+.car-block{
+    padding: 0 2rem;
+}
+.learn-card-img {
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+    background: url(https://source.unsplash.com/random);
+}
+
+.learn-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.learn-description {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+} 
+
+.l-card-1 {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.l-card-2 {
+    grid-area: 2 / 2 / 4 / 3;
+}
+
+.l-card-3 {
+    grid-area: 3 / 1 / 5 / 2;
+}
+
+.l-card-4 {
+    grid-area: 4 / 2 / 6 / 3;
+    align-self: end;
+}
+@media screen and (max-width: 1261px) {
+    .card-block {
+        margin: 0 4rem;
+    }
+}
+@media screen and (max-width: 1187px) {
+    
+}
+@media screen and (max-width: 1098px) {
+    .card-block {
+        margin: 0 10rem;
+    }
+  
+}
+@media screen and (max-width: 1053px) {
+
+    .card-block {
+        margin: 0;
+    }
+    .l-con-1,
+    .l-con-3 {
+        margin-left: 15rem;
+    }
+    .l-con-2,
+    .l-con-4 {
+        margin-right: 15rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .learn-sec-container {
+        grid-gap: none;
+    }
+    .learn-card-img {
+        height: 40vh;
+        width: 35vw;
+    }
+    .learn-title {
+        width: 18ch;
+    }
+    .learn-description {
+        width: 32ch;
+    }
+    .l-card-1,
+    .l-card-3 {
+        justify-self: end;
+    }
+}
+@media screen and (max-width: 768px) {
+    .l-con-1,
+    .l-con-2,
+    .l-con-3,
+    .l-con-4 {
+        margin: 0;
+    }
+    .learn-card-img {
+        width: 100%;
+    }
+    .learn-title {
+        width: 28ch;
+    }
+    .learn-description {
+        width: 100%;
+    }
+    .learn-sec-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .l-card-1,
+    .l-card-2,
+    .l-card-3,
+    .l-card-4 {
+        grid-area: auto;
+        justify-self: auto;
+    }
+
+    .learn-card {
+        margin-top: ;
+    }
+}
+@media screen and (max-width: 425px) {
+    .learn-title {
+        width: 18ch;
+    }
+    .l-card-4 {
+        display: none;
+    }
+}
