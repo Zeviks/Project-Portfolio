@@ -299,3 +299,37 @@ padding: 2rem;
         display: none;
     }
 }
+
+/* !footer */
+footer {
+    margin-top: auto;
+}
+.footer-nav {
+    margin: 0;
+    padding: 1rem;
+    align-content: center;
+}
+.footer-sec {
+    background: rgb(232,218,255);
+    background: radial-gradient(circle, rgba(232,218,255,1) 95%, rgba(255,255,255,1) 100%);
+} 
+.footer-icon {
+    font-size: 2rem;
+}
+@media screen and (max-width: 1024px) {
+   .footer-icon {
+       font-size: 1.5rem;
+   } 
+   .footer-email {
+       font-size: 1.5rem;
+   }
+   @media screen and (max-width: 768px) {
+       .logo-list {
+           display: none;
+       }
+       .list {
+           justify-content: space-between;
+           font-size: 2rem;
+       }
+   }
+}
