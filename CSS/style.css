@@ -266,6 +266,9 @@ ul {
 } 
 
 /* ! Hero */
+.hero-block {
+    margin-bottom: 0;
+}
 .hero {
 margin-top: 0;
 display: flex;
@@ -783,6 +786,7 @@ footer {
     margin-bottom: .3rem;
 }
 .profile-email {
+    color: var(--color-background);
     font-size: 3.4rem;
     font-weight: 500;
     letter-spacing: -.2rem;
