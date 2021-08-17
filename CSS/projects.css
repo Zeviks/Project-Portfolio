@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+    /*? Colors */
+    --color-primary: #0F1221;
+    --color-secondary: #8d99ae;
+    --color-background: #edf2f4;
+    --color-darker-accent: rgba(214, 192, 248, 0.705);
+    --color-accent: #E8DAFF;
+    --color-link: #646A8B;
+    /*? Gradients */
+    --gradient-accent: background: radial-gradient(circle, rgba(232,218,255,1) 68%, rgba(148,213,233,1) 100%);
+    /*? Fonts  */
+    --font-primary: 'Nothing You Could Do', cursive;
+    --font-secondary: 'Inter';
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--color-primary);
+}
+
+body {
+    color: var(--color-primary);
+    font-family: var(--font-secondary), sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
