@@ -25,6 +25,7 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="CSS/normalize.css" />
   <link rel="stylesheet" href="CSS/style.css" />
   <body>
@@ -49,29 +50,27 @@
     <!-- !Hero -->
     <section class="hero-block hero">
       <div class="hero-emoji-container">
-        <img class="hero-emoji emoji" src="images/Emoji-Hero.PNG" alt="" />
+        <img data-aos="fade-up" class="hero-emoji emoji" src="images/Emoji-Hero.PNG" alt="" />
       </div>
       <div class="hero-content sec-block">
-        <h1 class="hero-name">Hi, I'm Natanael ✌🏼</h1>
-        <h2 class="hero-msg">
+        <h1 data-aos-delay="200" data-aos="fade-right" class="hero-name">Hi, I'm Natanael ✌🏼</h1>
+        <h2 data-aos-delay="250" data-aos="zoom-in-up" class="hero-msg">
           <span class="border-design">Creating</span> Awesome Responsive Web Sites.
         </h2>
-        <p class="hero-description">
+        <p data-aos="fade-right" class="hero-description">
           A <strong>Front End Developer</strong> based in Edinburg,
           TX. I specialize in turning <strong>mockups</strong> and
           <strong>wireframes</strong> into fully
           <strong>responsive</strong> websites.
         </p>
-        <button class="btn hero-btn">Connect With Me</button>
+        <button data-aos-delay="750" data-aos="fade-up" class="btn hero-btn">Connect With Me</button>
       </div>
     </section>
-  </body>
   <!-- !about-me -->
   <section class="about-me">
     <div class="about-me-container">
-      <img src="about-me" alt="" />
-      <img class="about-me-emoji" src="images/think-emoji.png" alt="" />
-      <div class="about-me-content">
+      <img data-aos="fade-right" class="about-me-emoji" src="images/think-emoji.png" alt="" />
+      <div data-aos="fade-left" class="about-me-content">
         <h2 class="about-me-title border-design">A Bit More About Me</h2>
         <p class="about-me-description">
           My name is Natanael Pacheco. I have been studying Web Development
@@ -96,9 +95,10 @@
   <header class="section-title">
     <h2 class="block border-design side-title">Resume</h2>
   </header>
+
   <div class="block2 resume-container">
-    <div class="education">
-      <h3 class="resume-inner-section-title">Education</h2>  
+    <div data-aos="fade-right" class="education">
+      <h3 class="resume-inner-section-title border-design-2">Education</h3>  
         <div class="detail-section">
           <h4 class="detail-title">Udacity</h3>
             <p class="inner-detail-title">Front End Web Development Nanodegree</p>
@@ -115,8 +115,9 @@
               <p class="light-detail">March 2021 - June 2021</p> 
           </div>
     </div>
-    <div class="skills">
-      <h3 class="resume-inner-section-title">Skills</h3>
+
+    <div data-aos="fade-left" class="skills">
+      <h3 class="resume-inner-section-title border-design-3">Skills</h3>
       <table class="t-skills">
         <tr class="t-row">
           <th class="detail-title">Front End Development</th>
@@ -148,8 +149,9 @@
         </tr>
       </table>
     </div>
-          <div class="tools">
-            <h3 class="resume-inner-section-title">Tools</h3>
+
+          <div data-aos="fade-right" class="tools">
+            <h3 class="resume-inner-section-title border-design-4">Tools</h3>
             <table class="t-skills">
               <tr class="t-row">
                 <th class="detail-title">Desing</th>
@@ -181,7 +183,7 @@
               </tr>
             </table>
           </div>
-          <div class="got-questions">
+          <div data-aos="fade-left" class="got-questions">
             <img class="resume-emoji" src="Images/Emoji-Project-Sec.PNG" alt="">
             <div class="questions-content">
               <h2 class="questions-title">Got any questions?</h2>
@@ -269,7 +271,7 @@
     </header>
     <div class="learn-sec-container">
       <!-- card 1 -->
-      <div class="l-card-1 learn-container card-block">
+      <div data-aos="zoom-in-left" class="l-card-1 learn-container card-block">
         <div class="learn-card l-con-1">
           <div class="learn-card-img">
             <img class="learn-card-im" src="" alt="" />
@@ -284,7 +286,7 @@
         </div>
       </div>
       <!-- card 2 -->
-      <div class="l-card-2 learn-container card-block">
+      <div data-aos-delay="150" data-aos="zoom-in-right"class="l-card-2 learn-container card-block">
         <div class="learn-card l-con-2">
           <div class="learn-card-img">
             <img class="learn-card-im" src="" alt="" />
@@ -299,7 +301,7 @@
         </div>
       </div>
       <!-- card 3  -->
-      <div class="l-card-3 learn-container card-block">
+      <div data-aos="zoom-in-left" class="l-card-3 learn-container card-block">
         <div class="learn-card l-con-3">
           <div class="learn-card-img">
             <img class="learn-card-im" src="" alt="" />
@@ -316,7 +318,7 @@
         </div>
       </div>
       <!-- card 4 -->
-      <div class="l-card-4 learn-container card-block">
+      <div data-aos-delay="150" data-aos="zoom-in-right" class="l-card-4 learn-container card-block">
         <div class="learn-card l-con-4">
           <div class="learn-card-img">
             <img class="learn-card-im" src="" alt="" />
@@ -334,7 +336,11 @@
       </div>
     </div>
   </section>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
   <!-- !Footer -->
   <footer>
     <div class="footer-container footer-block">
@@ -349,10 +355,9 @@
           >natepacheco716@gmail.com</a
         >
       </div>
-      <h2 class="footer-sign">Lets Talk!</h2>
+      <a class="footer-sign">Lets Talk!</a>
       <p class="footer-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        magni tempora laborum laudantium dolorum!
+        I would love to hear about any feedback you may have, any ideas on how I can improve my site, Job opportunities, or even tech that I should consider picking up.  
       </p>
       <nav class="footer-socials">
         <ul class="footer-icon-list">
