@@ -281,9 +281,6 @@ ul {
 } 
 
 /* ! Hero */
-.hero-block {
-    margin-bottom: 0;
-}
 .hero {
 margin-top: 0;
 display: flex;
@@ -346,6 +343,7 @@ margin: 9rem 0;
 @media screen and (max-width: 1024px) {
     .hero {
         margin: 6.5rem 0;
+        margin-top: 0rem;
     }
     .hero-msg {
         font-size: 8rem;
@@ -992,6 +990,30 @@ footer {
 @media screen and (max-width: 1024px) {
     .footer-container {
         column-gap: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-sign {
+        font-size: 8rem;
+    }
+    .footer-description {
+        font-size: 1.8rem;
+        width: 30ch;
+    }
+    .footer-emoji {
+        width: 12rem;
+        height: 12rem;
+    }
+    .profile-name-container,
+    .profile-email-container {
+        justify-self: center;
+        margin-left: 15rem;
+    }
+    .profile-email {
+        font-size: 2.3rem;
+    }
+    .profile-name {
+        font-size: 3.5rem;
     }
 }
 @media screen and (max-width: 425px) {
